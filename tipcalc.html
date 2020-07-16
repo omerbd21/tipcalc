@@ -9,7 +9,21 @@
 	
 	<body style="background-color:black">
 			<h1><b><i> Omer's Tip Calculator</b></i> </h1>
-			Omer, please put the tip calc here.
+			<div id="rectangle">
+			<form>
+				<p> How much did you pay?</p>
+				<input type="text" placeholder="(in shekels)"></input><br><br>
+				<label for="percent"> How well was your service? </label><br><br>
+				<select name="percent" id="percent">
+					<option value="" disabled selected>  --Choose how much--  </option>
+					<option value="0"> Trash - 0% </option>
+					<option value="0.1"> Moderate - 10% </option>
+					<option value="0.2"> The best - 20% </option>
+				</select>
+			</form>
+			<br>
+			<button type="button" style="background-color:green"> Do the math!</button>
+			</div>
 	</body>
 	
 </html>
