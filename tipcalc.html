@@ -12,7 +12,7 @@
 			<div id="rectangle">
 			<form>
 				<p> How much did you pay?</p>
-				<input type="text" placeholder="(in shekels)"></input><br><br>
+				<input type="text" id="payed" placeholder="(in shekels)"></input><br><br>
 				<label for="percent"> How well was your service? </label><br><br>
 				<select name="percent" id="percent">
 					<option value="" disabled selected>  --Choose how much--  </option>
@@ -22,8 +22,11 @@
 				</select>
 			</form>
 			<br>
-			<button type="button" style="background-color:green"> Do the math!</button>
+			<button type="button" onclick=tipAmount() style="background-color:green"> Do the math!</button>
+			<br><br><br>
+			<div id="total"><span id="tip">The total is:</span></div>
 			</div>
+			<script src="tipcalc.js"></script>
 	</body>
 	
 </html>
